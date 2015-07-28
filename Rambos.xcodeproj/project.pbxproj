@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29AF4BBD4A7DA2E55515DBC7 /* Pods_Rambos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D000B82910A502488B57253 /* Pods_Rambos.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E607CE791B6739320069C163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE781B6739320069C163 /* AppDelegate.swift */; };
-		E607CE7B1B6739320069C163 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE7A1B6739320069C163 /* ViewController.swift */; };
 		E607CE7E1B6739320069C163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E607CE7C1B6739320069C163 /* Main.storyboard */; };
 		E607CE801B6739320069C163 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E607CE7F1B6739320069C163 /* Images.xcassets */; };
 		E607CE831B6739320069C163 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E607CE811B6739320069C163 /* LaunchScreen.xib */; };
 		E607CE8F1B6739320069C163 /* RambosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE8E1B6739320069C163 /* RambosTests.swift */; };
+		E607CE9F1B673A540069C163 /* RandomNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE991B673A540069C163 /* RandomNumbers.swift */; };
+		E607CEA01B673A540069C163 /* RandomNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE9A1B673A540069C163 /* RandomNumbersViewController.swift */; };
+		E607CEA11B673A540069C163 /* RandomNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE9B1B673A540069C163 /* RandomNumberViewModel.swift */; };
+		E607CEA21B673A540069C163 /* UIButton+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE9C1B673A540069C163 /* UIButton+Theme.swift */; };
+		E607CEA31B673A540069C163 /* UISegmentedControl+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE9D1B673A540069C163 /* UISegmentedControl+Values.swift */; };
+		E607CEA41B673A540069C163 /* ZHTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE9E1B673A540069C163 /* ZHTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +32,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D000B82910A502488B57253 /* Pods_Rambos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rambos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69707B673A9247D4138EE714 /* Pods-Rambos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rambos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rambos/Pods-Rambos.release.xcconfig"; sourceTree = "<group>"; };
 		E607CE731B6739320069C163 /* Rambos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rambos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E607CE771B6739320069C163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E607CE781B6739320069C163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E607CE7A1B6739320069C163 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E607CE7D1B6739320069C163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E607CE7F1B6739320069C163 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E607CE821B6739320069C163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E607CE881B6739320069C163 /* RambosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RambosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E607CE8D1B6739320069C163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E607CE8E1B6739320069C163 /* RambosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RambosTests.swift; sourceTree = "<group>"; };
+		E607CE991B673A540069C163 /* RandomNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumbers.swift; sourceTree = "<group>"; };
+		E607CE9A1B673A540069C163 /* RandomNumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumbersViewController.swift; sourceTree = "<group>"; };
+		E607CE9B1B673A540069C163 /* RandomNumberViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumberViewModel.swift; sourceTree = "<group>"; };
+		E607CE9C1B673A540069C163 /* UIButton+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Theme.swift"; sourceTree = "<group>"; };
+		E607CE9D1B673A540069C163 /* UISegmentedControl+Values.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Values.swift"; sourceTree = "<group>"; };
+		E607CE9E1B673A540069C163 /* ZHTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHTimer.swift; sourceTree = "<group>"; };
+		F2DCA3EC56A1667F4D57F98F /* Pods-Rambos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rambos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rambos/Pods-Rambos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29AF4BBD4A7DA2E55515DBC7 /* Pods_Rambos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510BF3BFCBB9982AB338A4AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2DCA3EC56A1667F4D57F98F /* Pods-Rambos.debug.xcconfig */,
+				69707B673A9247D4138EE714 /* Pods-Rambos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4C8D16425E4EA0AC3B2D0AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D000B82910A502488B57253 /* Pods_Rambos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E607CE6A1B6739320069C163 = {
 			isa = PBXGroup;
 			children = (
 				E607CE751B6739320069C163 /* Rambos */,
 				E607CE8B1B6739320069C163 /* RambosTests */,
 				E607CE741B6739320069C163 /* Products */,
+				510BF3BFCBB9982AB338A4AD /* Pods */,
+				C4C8D16425E4EA0AC3B2D0AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +111,10 @@
 		E607CE751B6739320069C163 /* Rambos */ = {
 			isa = PBXGroup;
 			children = (
-				E607CE781B6739320069C163 /* AppDelegate.swift */,
-				E607CE7A1B6739320069C163 /* ViewController.swift */,
+				E607CEA61B673AA70069C163 /* ViewModels */,
+				E607CEA51B673A930069C163 /* Controllers */,
+				E607CE981B673A240069C163 /* Models */,
 				E607CE7C1B6739320069C163 /* Main.storyboard */,
-				E607CE7F1B6739320069C163 /* Images.xcassets */,
-				E607CE811B6739320069C163 /* LaunchScreen.xib */,
 				E607CE761B6739320069C163 /* Supporting Files */,
 			);
 			path = Rambos;
@@ -90,6 +123,9 @@
 		E607CE761B6739320069C163 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E607CE781B6739320069C163 /* AppDelegate.swift */,
+				E607CE7F1B6739320069C163 /* Images.xcassets */,
+				E607CE811B6739320069C163 /* LaunchScreen.xib */,
 				E607CE771B6739320069C163 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +148,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E607CE981B673A240069C163 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E607CE991B673A540069C163 /* RandomNumbers.swift */,
+				E607CE9C1B673A540069C163 /* UIButton+Theme.swift */,
+				E607CE9D1B673A540069C163 /* UISegmentedControl+Values.swift */,
+				E607CE9E1B673A540069C163 /* ZHTimer.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E607CEA51B673A930069C163 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E607CE9A1B673A540069C163 /* RandomNumbersViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E607CEA61B673AA70069C163 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E607CE9B1B673A540069C163 /* RandomNumberViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E607CE921B6739320069C163 /* Build configuration list for PBXNativeTarget "Rambos" */;
 			buildPhases = (
+				B382DAEA6A817E251B8C74DC /* Check Pods Manifest.lock */,
 				E607CE6F1B6739320069C163 /* Sources */,
 				E607CE701B6739320069C163 /* Frameworks */,
 				E607CE711B6739320069C163 /* Resources */,
+				ED7E38352D15E18F0FA1B84D /* Embed Pods Frameworks */,
+				1B67F2EB9684C10E3ED34BBC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,13 +273,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B67F2EB9684C10E3ED34BBC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rambos/Pods-Rambos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B382DAEA6A817E251B8C74DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED7E38352D15E18F0FA1B84D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rambos/Pods-Rambos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E607CE6F1B6739320069C163 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E607CE7B1B6739320069C163 /* ViewController.swift in Sources */,
+				E607CEA31B673A540069C163 /* UISegmentedControl+Values.swift in Sources */,
+				E607CEA11B673A540069C163 /* RandomNumberViewModel.swift in Sources */,
+				E607CEA01B673A540069C163 /* RandomNumbersViewController.swift in Sources */,
+				E607CEA41B673A540069C163 /* ZHTimer.swift in Sources */,
 				E607CE791B6739320069C163 /* AppDelegate.swift in Sources */,
+				E607CE9F1B673A540069C163 /* RandomNumbers.swift in Sources */,
+				E607CEA21B673A540069C163 /* UIButton+Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +459,7 @@
 		};
 		E607CE931B6739320069C163 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DCA3EC56A1667F4D57F98F /* Pods-Rambos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Rambos/Info.plist;
@@ -350,6 +470,7 @@
 		};
 		E607CE941B6739320069C163 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69707B673A9247D4138EE714 /* Pods-Rambos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Rambos/Info.plist;
@@ -411,6 +532,7 @@
 				E607CE941B6739320069C163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E607CE951B6739320069C163 /* Build configuration list for PBXNativeTarget "RambosTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +541,7 @@
 				E607CE971B6739320069C163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

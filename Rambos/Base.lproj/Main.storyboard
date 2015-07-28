@@ -1,25 +1,140 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vm1-y0-2gd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Random Numbers View Controller-->
+        <scene sceneID="4mM-Oc-c5z">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RandomNumbersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T7L-Wh-41V" customClass="RandomNumbersViewController" customModule="Rambers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="1qd-is-sX6"/>
+                        <viewControllerLayoutGuide type="bottom" id="QLd-oz-dE5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="kQj-vj-5ar">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Numbers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aP-Po-98f">
+                                <rect key="frame" x="16" y="89" width="568" height="223"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvk-u6-Zpk">
+                                <rect key="frame" x="26" y="555" width="548" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="b8n-XZ-jLu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lD6-BH-8g8">
+                                <rect key="frame" x="26" y="520" width="548" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="qWL-5S-emJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoj-zy-VNx">
+                                <rect key="frame" x="66" y="437" width="209" height="58"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="K8I-Cv-nEc"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMb-aG-TtM">
+                                <rect key="frame" x="325" y="437" width="209" height="58"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OXE-k2-3kA">
+                                <rect key="frame" x="200" y="362" width="200" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="LDm-Xf-oXn"/>
+                                    <constraint firstAttribute="height" constant="40" id="puP-w5-FhB"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="26 digits"/>
+                                    <segment title="52 digits"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedValueChanged:" destination="T7L-Wh-41V" eventType="valueChanged" id="ZJD-yv-YQg"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uoj-zy-VNx" firstAttribute="centerY" secondItem="cMb-aG-TtM" secondAttribute="centerY" id="08r-Sf-s8b"/>
+                            <constraint firstItem="QLd-oz-dE5" firstAttribute="top" secondItem="cvk-u6-Zpk" secondAttribute="bottom" constant="20" id="0Fr-Yy-qSa"/>
+                            <constraint firstItem="uoj-zy-VNx" firstAttribute="leading" secondItem="kQj-vj-5ar" secondAttribute="leadingMargin" constant="50" id="1o1-uH-LxI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lD6-BH-8g8" secondAttribute="trailing" constant="10" id="FyI-YK-Qlx"/>
+                            <constraint firstItem="uoj-zy-VNx" firstAttribute="width" secondItem="cMb-aG-TtM" secondAttribute="width" id="GYb-Xt-qFd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cMb-aG-TtM" secondAttribute="trailing" constant="50" id="HUO-80-8Tp"/>
+                            <constraint firstAttribute="centerX" secondItem="OXE-k2-3kA" secondAttribute="centerX" id="IBZ-hX-E5i"/>
+                            <constraint firstItem="6aP-Po-98f" firstAttribute="leading" secondItem="kQj-vj-5ar" secondAttribute="leadingMargin" id="IMi-FN-UAZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6aP-Po-98f" secondAttribute="trailing" id="KFX-eX-oFa"/>
+                            <constraint firstItem="6aP-Po-98f" firstAttribute="top" secondItem="1qd-is-sX6" secondAttribute="bottom" constant="25" id="KFe-aU-Cp3"/>
+                            <constraint firstItem="uoj-zy-VNx" firstAttribute="height" secondItem="cMb-aG-TtM" secondAttribute="height" id="N7J-OU-2G4"/>
+                            <constraint firstItem="cMb-aG-TtM" firstAttribute="leading" secondItem="uoj-zy-VNx" secondAttribute="trailing" constant="50" id="OYM-eH-SAl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cvk-u6-Zpk" secondAttribute="trailing" constant="10" id="PMu-oo-A7V"/>
+                            <constraint firstItem="uoj-zy-VNx" firstAttribute="top" secondItem="OXE-k2-3kA" secondAttribute="bottom" constant="35" id="UGu-nY-4Ze"/>
+                            <constraint firstItem="cMb-aG-TtM" firstAttribute="leading" secondItem="uoj-zy-VNx" secondAttribute="trailing" constant="30" id="coQ-Cw-8sp"/>
+                            <constraint firstItem="cvk-u6-Zpk" firstAttribute="leading" secondItem="kQj-vj-5ar" secondAttribute="leadingMargin" constant="10" id="d1g-TQ-yUZ"/>
+                            <constraint firstItem="lD6-BH-8g8" firstAttribute="leading" secondItem="kQj-vj-5ar" secondAttribute="leadingMargin" constant="10" id="lJs-P5-lDU"/>
+                            <constraint firstItem="cvk-u6-Zpk" firstAttribute="top" secondItem="lD6-BH-8g8" secondAttribute="bottom" constant="10" id="mH8-kn-0Hl"/>
+                            <constraint firstItem="OXE-k2-3kA" firstAttribute="top" secondItem="6aP-Po-98f" secondAttribute="bottom" constant="50" id="n2L-6H-wxJ"/>
+                            <constraint firstItem="lD6-BH-8g8" firstAttribute="top" secondItem="uoj-zy-VNx" secondAttribute="bottom" constant="25" id="xBG-M1-cA2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="coQ-Cw-8sp"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="N0G-Dm-u5l"/>
+                    <connections>
+                        <outlet property="averageTimeLabel" destination="cvk-u6-Zpk" id="zhd-Ya-reg"/>
+                        <outlet property="digitsSegmentedControl" destination="OXE-k2-3kA" id="XkG-eg-AfR"/>
+                        <outlet property="randomNumberLabel" destination="6aP-Po-98f" id="Wp7-J4-jLp"/>
+                        <outlet property="startButton" destination="uoj-zy-VNx" id="nKE-a3-oKR"/>
+                        <outlet property="stopButton" destination="cMb-aG-TtM" id="PTg-O1-dJI"/>
+                        <outlet property="timerLabel" destination="lD6-BH-8g8" id="gCz-Is-tcU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4Q-fn-noB" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1377" y="447"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XS1-7N-dks">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vm1-y0-2gd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aMm-ia-UOM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="T7L-Wh-41V" kind="relationship" relationship="rootViewController" id="KhD-EA-jmU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tz3-F0-HSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="447"/>
         </scene>
     </scenes>
 </document>

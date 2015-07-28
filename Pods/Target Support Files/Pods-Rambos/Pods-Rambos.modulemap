@@ -1,0 +1,6 @@
+framework module Pods_Rambos {
+  umbrella header "Pods-Rambos-umbrella.h"
+
+  export *
+  module * { export * }
+}
