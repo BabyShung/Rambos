@@ -9,7 +9,7 @@
 import Bond
 import Foundation
 
-public class RandomNumberViewModel {
+class RandomNumberViewModel {
     
     let timerText = Dynamic<String>("00:00:00")
     let averageTimeText = Dynamic<String>("")
@@ -42,6 +42,6 @@ public class RandomNumberViewModel {
         timer.stop()
         startButtonEnabled.value = true
         stopButtonEnabled.value = false
-        timerText.value = "You used: " + timerText.value
+        timerText.value = timerText.value
     }
 }

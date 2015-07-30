@@ -19,6 +19,8 @@
 		E607CEA21B673A540069C163 /* UIButton+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE9C1B673A540069C163 /* UIButton+Theme.swift */; };
 		E607CEA31B673A540069C163 /* UISegmentedControl+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE9D1B673A540069C163 /* UISegmentedControl+Values.swift */; };
 		E607CEA41B673A540069C163 /* ZHTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE9E1B673A540069C163 /* ZHTimer.swift */; };
+		E61295371B688551009B068D /* EnterResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61295361B688551009B068D /* EnterResultViewController.swift */; };
+		E61295411B69BE09009B068D /* EnterResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61295401B69BE09009B068D /* EnterResultViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E607CE9C1B673A540069C163 /* UIButton+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Theme.swift"; sourceTree = "<group>"; };
 		E607CE9D1B673A540069C163 /* UISegmentedControl+Values.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Values.swift"; sourceTree = "<group>"; };
 		E607CE9E1B673A540069C163 /* ZHTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHTimer.swift; sourceTree = "<group>"; };
+		E61295361B688551009B068D /* EnterResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterResultViewController.swift; path = Classes/EnterResultViewController.swift; sourceTree = SOURCE_ROOT; };
+		E61295401B69BE09009B068D /* EnterResultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterResultViewModel.swift; path = Classes/EnterResultViewModel.swift; sourceTree = SOURCE_ROOT; };
 		F2DCA3EC56A1667F4D57F98F /* Pods-Rambos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rambos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rambos/Pods-Rambos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				E607CE9A1B673A540069C163 /* RandomNumbersViewController.swift */,
+				E61295361B688551009B068D /* EnterResultViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E607CE9B1B673A540069C163 /* RandomNumberViewModel.swift */,
+				E61295401B69BE09009B068D /* EnterResultViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -328,10 +334,12 @@
 			files = (
 				E607CEA31B673A540069C163 /* UISegmentedControl+Values.swift in Sources */,
 				E607CEA11B673A540069C163 /* RandomNumberViewModel.swift in Sources */,
+				E61295411B69BE09009B068D /* EnterResultViewModel.swift in Sources */,
 				E607CEA01B673A540069C163 /* RandomNumbersViewController.swift in Sources */,
 				E607CEA41B673A540069C163 /* ZHTimer.swift in Sources */,
 				E607CE791B6739320069C163 /* AppDelegate.swift in Sources */,
 				E607CE9F1B673A540069C163 /* RandomNumbers.swift in Sources */,
+				E61295371B688551009B068D /* EnterResultViewController.swift in Sources */,
 				E607CEA21B673A540069C163 /* UIButton+Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

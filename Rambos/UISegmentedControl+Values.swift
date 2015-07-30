@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+    We are having this class because Bond doesn't have UISegmentedControl for now
+*/
 enum SegmentedControlValue {
     case ValueLeft
     case ValueRight

@@ -28,6 +28,14 @@ class RandomNumbersViewController: UIViewController {
     lazy var stopButtonTapObserver: Bond<UIControlEvents> = Bond<UIControlEvents> {
         [unowned self] event in
         self.viewModel.stopTimer()
+        
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("EnterResultViewController") as! EnterResultViewController
+        //pass the data
+        vc.tuple = (self.randomNumberLabel.text!, self.timerLabel.text!)
+        
+        vc.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        self.presentViewController(vc, animated: true, completion: nil)
+        
     }
         
     /**
@@ -35,7 +43,7 @@ class RandomNumbersViewController: UIViewController {
     */
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         startButton.themeWithColor(UIColor.orangeColor())
         stopButton.themeWithColor(UIColor.blueColor())
         
