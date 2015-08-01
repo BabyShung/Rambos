@@ -21,6 +21,7 @@
 		E607CEA41B673A540069C163 /* ZHTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607CE9E1B673A540069C163 /* ZHTimer.swift */; };
 		E61295371B688551009B068D /* EnterResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61295361B688551009B068D /* EnterResultViewController.swift */; };
 		E61295411B69BE09009B068D /* EnterResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61295401B69BE09009B068D /* EnterResultViewModel.swift */; };
+		E64BE06C1B6C6B1B00530C2B /* ObserverProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BE06B1B6C6B1B00530C2B /* ObserverProxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E607CE9E1B673A540069C163 /* ZHTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHTimer.swift; sourceTree = "<group>"; };
 		E61295361B688551009B068D /* EnterResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterResultViewController.swift; path = Classes/EnterResultViewController.swift; sourceTree = SOURCE_ROOT; };
 		E61295401B69BE09009B068D /* EnterResultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnterResultViewModel.swift; path = Classes/EnterResultViewModel.swift; sourceTree = SOURCE_ROOT; };
+		E64BE06B1B6C6B1B00530C2B /* ObserverProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObserverProxy.swift; path = Classes/ObserverProxy.swift; sourceTree = SOURCE_ROOT; };
 		F2DCA3EC56A1667F4D57F98F /* Pods-Rambos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rambos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rambos/Pods-Rambos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 				E607CE9C1B673A540069C163 /* UIButton+Theme.swift */,
 				E607CE9D1B673A540069C163 /* UISegmentedControl+Values.swift */,
 				E607CE9E1B673A540069C163 /* ZHTimer.swift */,
+				E64BE06B1B6C6B1B00530C2B /* ObserverProxy.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				E607CEA01B673A540069C163 /* RandomNumbersViewController.swift in Sources */,
 				E607CEA41B673A540069C163 /* ZHTimer.swift in Sources */,
 				E607CE791B6739320069C163 /* AppDelegate.swift in Sources */,
+				E64BE06C1B6C6B1B00530C2B /* ObserverProxy.swift in Sources */,
 				E607CE9F1B673A540069C163 /* RandomNumbers.swift in Sources */,
 				E61295371B688551009B068D /* EnterResultViewController.swift in Sources */,
 				E607CEA21B673A540069C163 /* UIButton+Theme.swift in Sources */,
