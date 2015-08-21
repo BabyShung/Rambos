@@ -1,10 +1,10 @@
 PODS:
-  - Bond (3.9.0)
+  - Bond (3.10.0)
 
 DEPENDENCIES:
   - Bond (~> 3.7)
 
 SPEC CHECKSUMS:
-  Bond: 994ccc56aebfe2707d7b5e76f6d665a5beefa45b
+  Bond: c873dba04a09dde9e422242420979aa8e4c9e133
 
 COCOAPODS: 0.38.2

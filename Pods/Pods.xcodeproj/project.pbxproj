@@ -7,103 +7,105 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08EDEA021CC10869A84589E9CF3168B3 /* Bond+UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBD167F23C471D8192244C9FE90C103 /* Bond+UIDatePicker.swift */; };
-		0DE4913F3DAECC7B803E09AF6FDEC0F3 /* Bond-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1684985455C980169FEE594B71EFB046 /* Bond-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		233463A0650FC24F6F87D04FE67D8D27 /* Bond-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB8E729EEE7F6D8E66E60479374632C5 /* Bond-dummy.m */; };
-		2B826B880E06039DC4AE086DE7184998 /* Bond+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60905844FB35F5E0607EF2A3419BA338 /* Bond+UISwitch.swift */; };
-		2EE06915BF35E2C1099FB842EECE905D /* Bond+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA13594C47F5F8D0436601C392E05B5 /* Bond+UITextView.swift */; };
+		00B88068335290C1C713DF19FFF238BC /* Bond+UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4FB0BBAFF7B40291D127FB4E711A2 /* Bond+UITextView.swift */; };
+		12FA233B0D8CCFEEFCD363196136B6FD /* Bond+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827283735B36C82776A5EF0437F6968D /* Bond+UIActivityIndicatorView.swift */; };
+		192B2F4EC010816FC332A30861E325AE /* Bond+UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F55844270E90D0FD8AC1AB8427D0AB /* Bond+UISlider.swift */; };
+		230D58CAA23902F28C178DC3158C1328 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48025811A261CFE34CB94086885A5EC5 /* SystemConfiguration.framework */; };
 		2EEA2E6BD16D17BA0C98B1362CFECADF /* Pods-Rambos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D0DF713FC02B19732772863573AEF7 /* Pods-Rambos-dummy.m */; };
-		2EF34F59DF7A8D81C4ADA31687380C00 /* Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DB829F5F77D5EFC77EE8EAAE8AFAF0 /* Bond.swift */; };
-		3F6DFE5ABA0B492E20C046A9D00868B5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9822E1890B58C13A4091716E9D5266DE /* SystemConfiguration.framework */; };
-		4106F4D95C6C544A29B6272A24C1B885 /* Bond+UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB93BBDD2DE9738327FB719C6FCCAF9 /* Bond+UISlider.swift */; };
+		41A95B7E4F468D7385DACE74EED2C01D /* Bond+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E00172F17CA92742FD764CB4B601894 /* Bond+UILabel.swift */; };
+		42E7BE47F94C005C6F7EBE5B5BAC271E /* Bond+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AF9E525613D4688C525BDC5889EC15 /* Bond+Functional.swift */; };
 		43701B79DA71C1CD06216C3CE5622674 /* Pods-Rambos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DA0867DCC34BFB2946E2F566114E66 /* Pods-Rambos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		44A18E2F2AC013E792B8A5F59F5B45AF /* Bond+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665D5C6E2C7FE2C9FF482BDE1CDA2626 /* Bond+UICollectionView.swift */; };
-		55FD414C9DEA8C93450B89EBBBC08985 /* Bond+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3405DF8B570C58DD6EB60DAB1794B6AF /* Bond+UINavigationItem.swift */; };
-		68E10DF88F78D87F8BE41557E73DDC0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA32966C599EE6EFC6F3EAF10370EB6D /* Foundation.framework */; };
-		69624C973EA80CC7E574CC3777F4D280 /* Bond+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267F8D46B31ED9BC6D3991A17B54FD18 /* Bond+UIButton.swift */; };
-		6CC7F7CFA488CC4D6B232F88B6BE6DA6 /* Bond+UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46631C8DDE9A5BF4DFD459E3A88D77EB /* Bond+UIProgressView.swift */; };
-		6D785B4822FA1E4E4ACFE2EC9191B7B7 /* Bond+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028E7B84BA2397C8DA437707B836C705 /* Bond+UIImageView.swift */; };
-		740B110C557A6E8B76F716CC64502B98 /* Bond+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF9AA1B17D445A6AE36E45B94FFBA55 /* Bond+Foundation.swift */; };
-		80A15BE224C1A71627B7DEB81B2F8262 /* Bond+Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ED8031DD9D54212F942EFD425EA075 /* Bond+Arrays.swift */; };
-		8A00C9DD36D1159E93A800FDEB6994BA /* Bond+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80D394C8C3223F2C36935297586B560 /* Bond+NSLayoutConstraint.swift */; };
-		8C6D4F8CE21BA725008A554D356DFD32 /* Bond+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732C5EA8E944ABB756686F1EF54BC10E /* Bond+UILabel.swift */; };
-		8F1BC772371748B04982A472B0C0B166 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA32966C599EE6EFC6F3EAF10370EB6D /* Foundation.framework */; };
-		9981976982AAE258243BE7D4B86CDFDF /* Bond+UIBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A234A052CA243DB17CED2DB209FF8C /* Bond+UIBarItem.swift */; };
-		9DE4D2E39B856B9CCDE5D96B8423527F /* Bond+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482A31C064C0F00519337D7404832BAC /* Bond+CALayer.swift */; };
-		B66FE2841A568B03D3D2995F0CCE126B /* Bond+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3CCAEBA3562DAAC51659E0895387F /* Bond+Functional.swift */; };
-		B840D0924C5DE89E7689144187294386 /* Bond.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ADF226B35A33293061068A0433DB775 /* Bond.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE93255D08FA4FE2453733F49644FBB4 /* Bond+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80E7927C81977914575E9587B3EECA0 /* Bond+UITableView.swift */; };
-		D7DE598CE7711F8EC78437BCC595342B /* Bond+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B5229A3CC497AE5508B373A4A40FB4 /* Bond+UIView.swift */; };
-		D96EC058BF3B34471B8643F3315C307F /* Bond+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C23274348BB388DAF285DDA2EB6E55 /* Bond+Operators.swift */; };
-		E723B828195142CF1253D29142BFFDEB /* Bond+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0020E2E94D345DA82D9215D95E330AAF /* Bond+UIActivityIndicatorView.swift */; };
-		F10BFDF5ACBACDE8C2A709AB4E9FC5C1 /* Bond+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD04BDA564901948892943A86ADDDD3 /* Bond+UITextField.swift */; };
+		48CC8F73B6E7CC4046C9BD07B5BC5B0B /* Bond+UIBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B929558AF57AF38A651E6242A0557DE /* Bond+UIBarItem.swift */; };
+		4CD7F64EF49D07D19716D92AB0D684A6 /* Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B803642F8C1A984E575ECEF4339BFE /* Bond.swift */; };
+		56F94991ECD2F734D044F5E1B5A9D931 /* Bond+UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E043FF099B293DA16345907DB9C218 /* Bond+UISegmentedControl.swift */; };
+		68E10DF88F78D87F8BE41557E73DDC0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE594371E35007DEF26A9F0EBF68619A /* Foundation.framework */; };
+		72F4A6E3B40083499F46EA4BD0F66795 /* Bond+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F70DCD0E8976742A23E7A208985A61 /* Bond+Operators.swift */; };
+		7A73970F3D893854A9CDC86FFE7DA57E /* Bond+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3648FCDE87EE57F49C47C82C6352208 /* Bond+UIButton.swift */; };
+		7C2DEBFA32A650188D9AB9FE8AE0950B /* Bond+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7B928A17A11D82757557066C3BC8D /* Bond+UITextField.swift */; };
+		825C8541AF00031E4FB9DDFE7E204909 /* Bond+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CFBCB1AB40E16679A575D36840AFBF /* Bond+Foundation.swift */; };
+		82848D04BAAE8F7F9D6D929FC7A4E6D3 /* Bond+UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C148FC5F3C50B783AEBA9ADBD553D821 /* Bond+UIProgressView.swift */; };
+		8B6D76EF26267674FE5B83742EF63B21 /* Bond+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9AD1CE5BC41FFD03D73603E654E7CE /* Bond+UISwitch.swift */; };
+		9F211A1E188B1FE207D0635AC7015795 /* Bond-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C7CD032245B3E55B75FA6A38B1BCF8 /* Bond-dummy.m */; };
+		A4C3C98FBF4C2C73938659DD03A486A6 /* Bond+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5D96159491CADC08B42DC408F19611 /* Bond+UIImageView.swift */; };
+		B20C23CDC630039926E4CD5716E78AC0 /* Bond+Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2452D4E4FD2F808E86973A331ABFDC8D /* Bond+Arrays.swift */; };
+		B9A2C63AC0616DD7297B5EEBDCBBEF73 /* Bond+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7783B612C78F0D4B841464AAFF02D9BB /* Bond+UITableView.swift */; };
+		BBAF1D6E2392E12BB08819A2DD21DF82 /* Bond-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F22235F27AF3BE9D9C0943B6144558 /* Bond-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD43B1881907120E0FD1FD9B81FDBA65 /* Bond+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054EE87B6CF6368A379A06EF9F31A0D5 /* Bond+CALayer.swift */; };
+		C8CB0BB48B4AFCBC48AD23D250511531 /* Bond.h in Headers */ = {isa = PBXBuildFile; fileRef = 86E72979A251CE5E24C61CFE4E6D2907 /* Bond.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0DA022A71BF7B053E7B8A8B2001A250 /* Bond+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F92163F527C7735A7215F07435505C /* Bond+NSLayoutConstraint.swift */; };
+		E1E8667DDE382C4FB988586B224738AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE594371E35007DEF26A9F0EBF68619A /* Foundation.framework */; };
+		E35C21808B6206B4C09CF3DFDC23DCE4 /* Bond+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A1C055C9EF84176E99B84DC6E81451 /* Bond+UICollectionView.swift */; };
+		E5D920EFEBB8DA5F202C92A8317820FC /* Bond+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C53FD50D699305E01B94E2B2E14F5D4 /* Bond+UIView.swift */; };
+		E600CBC4B3E948A70D5A236458822A16 /* Bond+UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2F2F031AEE70B00829AC8377812F3 /* Bond+UINavigationItem.swift */; };
+		E724E2D50DDF95EAAD661879775CD0F1 /* Bond+UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B44AF913DC1347B6B1E91BCEE52815 /* Bond+UIDatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3597D41C21DD462C0A3D64EEA53A3D83 /* PBXContainerItemProxy */ = {
+		7F18D237665410214AD1F8B7537FC882 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 338205BC34A658F7C109143DB290B612;
+			remoteGlobalIDString = CE7732F7AE20E6C96BF7771036B05480;
 			remoteInfo = Bond;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0020E2E94D345DA82D9215D95E330AAF /* Bond+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIActivityIndicatorView.swift"; path = "Bond/iOS/Bond+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
-		028E7B84BA2397C8DA437707B836C705 /* Bond+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIImageView.swift"; path = "Bond/iOS/Bond+UIImageView.swift"; sourceTree = "<group>"; };
-		04C23274348BB388DAF285DDA2EB6E55 /* Bond+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Operators.swift"; path = "Bond/Bond+Operators.swift"; sourceTree = "<group>"; };
-		14DB829F5F77D5EFC77EE8EAAE8AFAF0 /* Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bond.swift; path = Bond/Bond.swift; sourceTree = "<group>"; };
-		1684985455C980169FEE594B71EFB046 /* Bond-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-umbrella.h"; sourceTree = "<group>"; };
-		1CA13594C47F5F8D0436601C392E05B5 /* Bond+UITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITextView.swift"; path = "Bond/iOS/Bond+UITextView.swift"; sourceTree = "<group>"; };
-		1EBD167F23C471D8192244C9FE90C103 /* Bond+UIDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIDatePicker.swift"; path = "Bond/iOS/Bond+UIDatePicker.swift"; sourceTree = "<group>"; };
+		054EE87B6CF6368A379A06EF9F31A0D5 /* Bond+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+CALayer.swift"; path = "Bond/Shared/Bond+CALayer.swift"; sourceTree = "<group>"; };
+		0AB7B928A17A11D82757557066C3BC8D /* Bond+UITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITextField.swift"; path = "Bond/iOS/Bond+UITextField.swift"; sourceTree = "<group>"; };
+		1211D85EE913DC92140FBDA9F0D17B0F /* Bond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13E043FF099B293DA16345907DB9C218 /* Bond+UISegmentedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UISegmentedControl.swift"; path = "Bond/iOS/Bond+UISegmentedControl.swift"; sourceTree = "<group>"; };
+		1E00172F17CA92742FD764CB4B601894 /* Bond+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UILabel.swift"; path = "Bond/iOS/Bond+UILabel.swift"; sourceTree = "<group>"; };
+		1F9AD1CE5BC41FFD03D73603E654E7CE /* Bond+UISwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UISwitch.swift"; path = "Bond/iOS/Bond+UISwitch.swift"; sourceTree = "<group>"; };
+		20F22235F27AF3BE9D9C0943B6144558 /* Bond-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-umbrella.h"; sourceTree = "<group>"; };
+		2452D4E4FD2F808E86973A331ABFDC8D /* Bond+Arrays.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Arrays.swift"; path = "Bond/Bond+Arrays.swift"; sourceTree = "<group>"; };
 		250E16D9F80A1A68BA450DF3B848A55D /* Pods-Rambos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rambos-resources.sh"; sourceTree = "<group>"; };
-		25DC896CB9E5910F64A18C631016E77E /* Bond.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Bond.modulemap; sourceTree = "<group>"; };
-		267F8D46B31ED9BC6D3991A17B54FD18 /* Bond+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIButton.swift"; path = "Bond/iOS/Bond+UIButton.swift"; sourceTree = "<group>"; };
-		2ADF226B35A33293061068A0433DB775 /* Bond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bond.h; path = Bond/Bond.h; sourceTree = "<group>"; };
-		3405DF8B570C58DD6EB60DAB1794B6AF /* Bond+UINavigationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UINavigationItem.swift"; path = "Bond/iOS/Bond+UINavigationItem.swift"; sourceTree = "<group>"; };
+		2C53FD50D699305E01B94E2B2E14F5D4 /* Bond+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIView.swift"; path = "Bond/iOS/Bond+UIView.swift"; sourceTree = "<group>"; };
+		31A4FB0BBAFF7B40291D127FB4E711A2 /* Bond+UITextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITextView.swift"; path = "Bond/iOS/Bond+UITextView.swift"; sourceTree = "<group>"; };
 		3752B58F74D5137EAF1475C3CCD1CB55 /* Pods-Rambos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rambos.debug.xcconfig"; sourceTree = "<group>"; };
-		3BB93BBDD2DE9738327FB719C6FCCAF9 /* Bond+UISlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UISlider.swift"; path = "Bond/iOS/Bond+UISlider.swift"; sourceTree = "<group>"; };
 		41D0DF713FC02B19732772863573AEF7 /* Pods-Rambos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rambos-dummy.m"; sourceTree = "<group>"; };
 		425C35A464567B72A8DE862326CF8257 /* Pods-Rambos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rambos-frameworks.sh"; sourceTree = "<group>"; };
-		46631C8DDE9A5BF4DFD459E3A88D77EB /* Bond+UIProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIProgressView.swift"; path = "Bond/iOS/Bond+UIProgressView.swift"; sourceTree = "<group>"; };
-		482A31C064C0F00519337D7404832BAC /* Bond+CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+CALayer.swift"; path = "Bond/Shared/Bond+CALayer.swift"; sourceTree = "<group>"; };
-		55F3CCAEBA3562DAAC51659E0895387F /* Bond+Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Functional.swift"; path = "Bond/Bond+Functional.swift"; sourceTree = "<group>"; };
+		44F55844270E90D0FD8AC1AB8427D0AB /* Bond+UISlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UISlider.swift"; path = "Bond/iOS/Bond+UISlider.swift"; sourceTree = "<group>"; };
+		48025811A261CFE34CB94086885A5EC5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		4B5D96159491CADC08B42DC408F19611 /* Bond+UIImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIImageView.swift"; path = "Bond/iOS/Bond+UIImageView.swift"; sourceTree = "<group>"; };
+		51B803642F8C1A984E575ECEF4339BFE /* Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bond.swift; path = Bond/Bond.swift; sourceTree = "<group>"; };
 		56D734ACDE771B922C81C1FE7F300D57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60905844FB35F5E0607EF2A3419BA338 /* Bond+UISwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UISwitch.swift"; path = "Bond/iOS/Bond+UISwitch.swift"; sourceTree = "<group>"; };
-		665D5C6E2C7FE2C9FF482BDE1CDA2626 /* Bond+UICollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UICollectionView.swift"; path = "Bond/iOS/Bond+UICollectionView.swift"; sourceTree = "<group>"; };
-		6D5366EC1D40AA12BB6B24F92F54F87F /* Bond-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-prefix.pch"; sourceTree = "<group>"; };
-		6E26E4EC9805B9F6E27DC3FF8DE58F54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		732C5EA8E944ABB756686F1EF54BC10E /* Bond+UILabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UILabel.swift"; path = "Bond/iOS/Bond+UILabel.swift"; sourceTree = "<group>"; };
-		79B5229A3CC497AE5508B373A4A40FB4 /* Bond+UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIView.swift"; path = "Bond/iOS/Bond+UIView.swift"; sourceTree = "<group>"; };
-		7CD04BDA564901948892943A86ADDDD3 /* Bond+UITextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITextField.swift"; path = "Bond/iOS/Bond+UITextField.swift"; sourceTree = "<group>"; };
+		5F607E25A803BB7F5385A6F2424EE02A /* Bond.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Bond.modulemap; sourceTree = "<group>"; };
+		63A1C055C9EF84176E99B84DC6E81451 /* Bond+UICollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UICollectionView.swift"; path = "Bond/iOS/Bond+UICollectionView.swift"; sourceTree = "<group>"; };
+		63BA17057454F3BA0364C81DD6CAFAEC /* Bond-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-prefix.pch"; sourceTree = "<group>"; };
+		64CFBCB1AB40E16679A575D36840AFBF /* Bond+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Foundation.swift"; path = "Bond/Bond+Foundation.swift"; sourceTree = "<group>"; };
+		6AD2F2F031AEE70B00829AC8377812F3 /* Bond+UINavigationItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UINavigationItem.swift"; path = "Bond/iOS/Bond+UINavigationItem.swift"; sourceTree = "<group>"; };
+		7783B612C78F0D4B841464AAFF02D9BB /* Bond+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITableView.swift"; path = "Bond/iOS/Bond+UITableView.swift"; sourceTree = "<group>"; };
+		79F92163F527C7735A7215F07435505C /* Bond+NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+NSLayoutConstraint.swift"; path = "Bond/Shared/Bond+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		827283735B36C82776A5EF0437F6968D /* Bond+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIActivityIndicatorView.swift"; path = "Bond/iOS/Bond+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
 		85DA0867DCC34BFB2946E2F566114E66 /* Pods-Rambos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rambos-umbrella.h"; sourceTree = "<group>"; };
+		86E72979A251CE5E24C61CFE4E6D2907 /* Bond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bond.h; path = Bond/Bond.h; sourceTree = "<group>"; };
+		8B929558AF57AF38A651E6242A0557DE /* Bond+UIBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIBarItem.swift"; path = "Bond/iOS/Bond+UIBarItem.swift"; sourceTree = "<group>"; };
 		8E079F4AB5052BF0EA1FE329DB693456 /* Pods-Rambos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Rambos.modulemap"; sourceTree = "<group>"; };
-		92AA62AAF6C7C97DF78019B6A5129783 /* Bond-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Bond-Private.xcconfig"; sourceTree = "<group>"; };
-		96ED8031DD9D54212F942EFD425EA075 /* Bond+Arrays.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Arrays.swift"; path = "Bond/Bond+Arrays.swift"; sourceTree = "<group>"; };
 		9777C37EDCFB69B127DB4181F6BDBEEA /* Pods-Rambos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rambos-acknowledgements.plist"; sourceTree = "<group>"; };
-		9822E1890B58C13A4091716E9D5266DE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		9A9BF629A389C1BA623353216810735F /* Bond.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bond.xcconfig; sourceTree = "<group>"; };
-		9B74EDEECAFB7F604F064403AF633007 /* Bond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8AF9E525613D4688C525BDC5889EC15 /* Bond+Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Functional.swift"; path = "Bond/Bond+Functional.swift"; sourceTree = "<group>"; };
+		A91DC2D7969C1B240AD4CE2B1603AEAC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3406BD8C4FC713867927B48CA5BDA0B /* Pods_Rambos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rambos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA32966C599EE6EFC6F3EAF10370EB6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BD9504AB00EC9CEB7A812B51949463D7 /* Pods-Rambos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rambos-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C0A234A052CA243DB17CED2DB209FF8C /* Bond+UIBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIBarItem.swift"; path = "Bond/iOS/Bond+UIBarItem.swift"; sourceTree = "<group>"; };
-		CB8E729EEE7F6D8E66E60479374632C5 /* Bond-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bond-dummy.m"; sourceTree = "<group>"; };
-		E80E7927C81977914575E9587B3EECA0 /* Bond+UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UITableView.swift"; path = "Bond/iOS/Bond+UITableView.swift"; sourceTree = "<group>"; };
+		C148FC5F3C50B783AEBA9ADBD553D821 /* Bond+UIProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIProgressView.swift"; path = "Bond/iOS/Bond+UIProgressView.swift"; sourceTree = "<group>"; };
+		C70A0777D0B425B624DA307386131AA9 /* Bond.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bond.xcconfig; sourceTree = "<group>"; };
+		C71B7EE664426D5E582008DAD55EBEDB /* Bond-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Bond-Private.xcconfig"; sourceTree = "<group>"; };
+		DE594371E35007DEF26A9F0EBF68619A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E2B44AF913DC1347B6B1E91BCEE52815 /* Bond+UIDatePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIDatePicker.swift"; path = "Bond/iOS/Bond+UIDatePicker.swift"; sourceTree = "<group>"; };
 		F234A1026EDC4C38F06C5DDDC3FEAB65 /* Pods-Rambos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rambos.release.xcconfig"; sourceTree = "<group>"; };
-		F80D394C8C3223F2C36935297586B560 /* Bond+NSLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+NSLayoutConstraint.swift"; path = "Bond/Shared/Bond+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
-		FEF9AA1B17D445A6AE36E45B94FFBA55 /* Bond+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Foundation.swift"; path = "Bond/Bond+Foundation.swift"; sourceTree = "<group>"; };
+		F2C7CD032245B3E55B75FA6A38B1BCF8 /* Bond-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bond-dummy.m"; sourceTree = "<group>"; };
+		F3648FCDE87EE57F49C47C82C6352208 /* Bond+UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+UIButton.swift"; path = "Bond/iOS/Bond+UIButton.swift"; sourceTree = "<group>"; };
+		F3F70DCD0E8976742A23E7A208985A61 /* Bond+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bond+Operators.swift"; path = "Bond/Bond+Operators.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		343A85FAC902D5B39930608B65F2D263 /* Frameworks */ = {
+		3B7B81D8236EBE265E1736775E015D2A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F1BC772371748B04982A472B0C0B166 /* Foundation.framework in Frameworks */,
-				3F6DFE5ABA0B492E20C046A9D00868B5 /* SystemConfiguration.framework in Frameworks */,
+				E1E8667DDE382C4FB988586B224738AB /* Foundation.framework in Frameworks */,
+				230D58CAA23902F28C178DC3158C1328 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,37 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0501C86F77AA1AC379F7D83B86CF710E /* Bond */ = {
-			isa = PBXGroup;
-			children = (
-				2ADF226B35A33293061068A0433DB775 /* Bond.h */,
-				14DB829F5F77D5EFC77EE8EAAE8AFAF0 /* Bond.swift */,
-				96ED8031DD9D54212F942EFD425EA075 /* Bond+Arrays.swift */,
-				482A31C064C0F00519337D7404832BAC /* Bond+CALayer.swift */,
-				FEF9AA1B17D445A6AE36E45B94FFBA55 /* Bond+Foundation.swift */,
-				55F3CCAEBA3562DAAC51659E0895387F /* Bond+Functional.swift */,
-				F80D394C8C3223F2C36935297586B560 /* Bond+NSLayoutConstraint.swift */,
-				04C23274348BB388DAF285DDA2EB6E55 /* Bond+Operators.swift */,
-				0020E2E94D345DA82D9215D95E330AAF /* Bond+UIActivityIndicatorView.swift */,
-				C0A234A052CA243DB17CED2DB209FF8C /* Bond+UIBarItem.swift */,
-				267F8D46B31ED9BC6D3991A17B54FD18 /* Bond+UIButton.swift */,
-				665D5C6E2C7FE2C9FF482BDE1CDA2626 /* Bond+UICollectionView.swift */,
-				1EBD167F23C471D8192244C9FE90C103 /* Bond+UIDatePicker.swift */,
-				028E7B84BA2397C8DA437707B836C705 /* Bond+UIImageView.swift */,
-				732C5EA8E944ABB756686F1EF54BC10E /* Bond+UILabel.swift */,
-				3405DF8B570C58DD6EB60DAB1794B6AF /* Bond+UINavigationItem.swift */,
-				46631C8DDE9A5BF4DFD459E3A88D77EB /* Bond+UIProgressView.swift */,
-				3BB93BBDD2DE9738327FB719C6FCCAF9 /* Bond+UISlider.swift */,
-				60905844FB35F5E0607EF2A3419BA338 /* Bond+UISwitch.swift */,
-				E80E7927C81977914575E9587B3EECA0 /* Bond+UITableView.swift */,
-				7CD04BDA564901948892943A86ADDDD3 /* Bond+UITextField.swift */,
-				1CA13594C47F5F8D0436601C392E05B5 /* Bond+UITextView.swift */,
-				79B5229A3CC497AE5508B373A4A40FB4 /* Bond+UIView.swift */,
-				20EFB28929F668587A0929DB88E953EC /* Support Files */,
-			);
-			path = Bond;
-			sourceTree = "<group>";
-		};
 		11E6F899C515ADD5DE996B5E20DC3C2A /* Pods-Rambos */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,16 +138,16 @@
 			path = "Target Support Files/Pods-Rambos";
 			sourceTree = "<group>";
 		};
-		20EFB28929F668587A0929DB88E953EC /* Support Files */ = {
+		38309A9C0CC515C799F9B5D58EBFB4CD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				25DC896CB9E5910F64A18C631016E77E /* Bond.modulemap */,
-				9A9BF629A389C1BA623353216810735F /* Bond.xcconfig */,
-				92AA62AAF6C7C97DF78019B6A5129783 /* Bond-Private.xcconfig */,
-				CB8E729EEE7F6D8E66E60479374632C5 /* Bond-dummy.m */,
-				6D5366EC1D40AA12BB6B24F92F54F87F /* Bond-prefix.pch */,
-				1684985455C980169FEE594B71EFB046 /* Bond-umbrella.h */,
-				6E26E4EC9805B9F6E27DC3FF8DE58F54 /* Info.plist */,
+				5F607E25A803BB7F5385A6F2424EE02A /* Bond.modulemap */,
+				C70A0777D0B425B624DA307386131AA9 /* Bond.xcconfig */,
+				C71B7EE664426D5E582008DAD55EBEDB /* Bond-Private.xcconfig */,
+				F2C7CD032245B3E55B75FA6A38B1BCF8 /* Bond-dummy.m */,
+				63BA17057454F3BA0364C81DD6CAFAEC /* Bond-prefix.pch */,
+				20F22235F27AF3BE9D9C0943B6144558 /* Bond-umbrella.h */,
+				A91DC2D7969C1B240AD4CE2B1603AEAC /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Bond";
@@ -190,10 +161,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		626FC4F5A0D60DB6AB84BFC3E7D646B2 /* Pods */ = {
+		465997458F92CAE8594E9DA5E9E3C531 /* Bond */ = {
 			isa = PBXGroup;
 			children = (
-				0501C86F77AA1AC379F7D83B86CF710E /* Bond */,
+				86E72979A251CE5E24C61CFE4E6D2907 /* Bond.h */,
+				51B803642F8C1A984E575ECEF4339BFE /* Bond.swift */,
+				2452D4E4FD2F808E86973A331ABFDC8D /* Bond+Arrays.swift */,
+				054EE87B6CF6368A379A06EF9F31A0D5 /* Bond+CALayer.swift */,
+				64CFBCB1AB40E16679A575D36840AFBF /* Bond+Foundation.swift */,
+				A8AF9E525613D4688C525BDC5889EC15 /* Bond+Functional.swift */,
+				79F92163F527C7735A7215F07435505C /* Bond+NSLayoutConstraint.swift */,
+				F3F70DCD0E8976742A23E7A208985A61 /* Bond+Operators.swift */,
+				827283735B36C82776A5EF0437F6968D /* Bond+UIActivityIndicatorView.swift */,
+				8B929558AF57AF38A651E6242A0557DE /* Bond+UIBarItem.swift */,
+				F3648FCDE87EE57F49C47C82C6352208 /* Bond+UIButton.swift */,
+				63A1C055C9EF84176E99B84DC6E81451 /* Bond+UICollectionView.swift */,
+				E2B44AF913DC1347B6B1E91BCEE52815 /* Bond+UIDatePicker.swift */,
+				4B5D96159491CADC08B42DC408F19611 /* Bond+UIImageView.swift */,
+				1E00172F17CA92742FD764CB4B601894 /* Bond+UILabel.swift */,
+				6AD2F2F031AEE70B00829AC8377812F3 /* Bond+UINavigationItem.swift */,
+				C148FC5F3C50B783AEBA9ADBD553D821 /* Bond+UIProgressView.swift */,
+				13E043FF099B293DA16345907DB9C218 /* Bond+UISegmentedControl.swift */,
+				44F55844270E90D0FD8AC1AB8427D0AB /* Bond+UISlider.swift */,
+				1F9AD1CE5BC41FFD03D73603E654E7CE /* Bond+UISwitch.swift */,
+				7783B612C78F0D4B841464AAFF02D9BB /* Bond+UITableView.swift */,
+				0AB7B928A17A11D82757557066C3BC8D /* Bond+UITextField.swift */,
+				31A4FB0BBAFF7B40291D127FB4E711A2 /* Bond+UITextView.swift */,
+				2C53FD50D699305E01B94E2B2E14F5D4 /* Bond+UIView.swift */,
+				38309A9C0CC515C799F9B5D58EBFB4CD /* Support Files */,
+			);
+			path = Bond;
+			sourceTree = "<group>";
+		};
+		4C6FCBD970E6FD21F878C0EF22634FBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				465997458F92CAE8594E9DA5E9E3C531 /* Bond */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -203,7 +206,7 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				626FC4F5A0D60DB6AB84BFC3E7D646B2 /* Pods */,
+				4C6FCBD970E6FD21F878C0EF22634FBF /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				C8A3344B0C8EB06B65DDDF15532A5B81 /* Targets Support Files */,
 			);
@@ -220,7 +223,7 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B74EDEECAFB7F604F064403AF633007 /* Bond.framework */,
+				1211D85EE913DC92140FBDA9F0D17B0F /* Bond.framework */,
 				B3406BD8C4FC713867927B48CA5BDA0B /* Pods_Rambos.framework */,
 			);
 			name = Products;
@@ -229,8 +232,8 @@
 		FB9EF902C898ACC11D14AD351608F774 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BA32966C599EE6EFC6F3EAF10370EB6D /* Foundation.framework */,
-				9822E1890B58C13A4091716E9D5266DE /* SystemConfiguration.framework */,
+				DE594371E35007DEF26A9F0EBF68619A /* Foundation.framework */,
+				48025811A261CFE34CB94086885A5EC5 /* SystemConfiguration.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -238,6 +241,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2BE9D2D0898AF272BF514A1111FF92F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBAF1D6E2392E12BB08819A2DD21DF82 /* Bond-umbrella.h in Headers */,
+				C8CB0BB48B4AFCBC48AD23D250511531 /* Bond.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		700EFDC85E61B435E8804854895D9D6E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,25 +258,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A462B9F65869343BA951342525D812FB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DE4913F3DAECC7B803E09AF6FDEC0F3 /* Bond-umbrella.h in Headers */,
-				B840D0924C5DE89E7689144187294386 /* Bond.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		338205BC34A658F7C109143DB290B612 /* Bond */ = {
+		CE7732F7AE20E6C96BF7771036B05480 /* Bond */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A953EA6175E8927916F31CCC28250EC0 /* Build configuration list for PBXNativeTarget "Bond" */;
+			buildConfigurationList = 7DBCAEF49645EC1FFE67216C2888F867 /* Build configuration list for PBXNativeTarget "Bond" */;
 			buildPhases = (
-				5DDBF658FD1675C61F3D10427A0753C4 /* Sources */,
-				343A85FAC902D5B39930608B65F2D263 /* Frameworks */,
-				A462B9F65869343BA951342525D812FB /* Headers */,
+				93A421BDDF7747BBBA5C25378AE79DEF /* Sources */,
+				3B7B81D8236EBE265E1736775E015D2A /* Frameworks */,
+				2BE9D2D0898AF272BF514A1111FF92F2 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -272,7 +275,7 @@
 			);
 			name = Bond;
 			productName = Bond;
-			productReference = 9B74EDEECAFB7F604F064403AF633007 /* Bond.framework */;
+			productReference = 1211D85EE913DC92140FBDA9F0D17B0F /* Bond.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CED3C6B7483D15EA647C440E9B1CD174 /* Pods-Rambos */ = {
@@ -286,7 +289,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				59DD7261AB74908A9E93843E12AEE452 /* PBXTargetDependency */,
+				54D0653648445FF59D7CBD44C94BCEA9 /* PBXTargetDependency */,
 			);
 			name = "Pods-Rambos";
 			productName = "Pods-Rambos";
@@ -314,40 +317,41 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				338205BC34A658F7C109143DB290B612 /* Bond */,
+				CE7732F7AE20E6C96BF7771036B05480 /* Bond */,
 				CED3C6B7483D15EA647C440E9B1CD174 /* Pods-Rambos */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5DDBF658FD1675C61F3D10427A0753C4 /* Sources */ = {
+		93A421BDDF7747BBBA5C25378AE79DEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A15BE224C1A71627B7DEB81B2F8262 /* Bond+Arrays.swift in Sources */,
-				9DE4D2E39B856B9CCDE5D96B8423527F /* Bond+CALayer.swift in Sources */,
-				740B110C557A6E8B76F716CC64502B98 /* Bond+Foundation.swift in Sources */,
-				B66FE2841A568B03D3D2995F0CCE126B /* Bond+Functional.swift in Sources */,
-				8A00C9DD36D1159E93A800FDEB6994BA /* Bond+NSLayoutConstraint.swift in Sources */,
-				D96EC058BF3B34471B8643F3315C307F /* Bond+Operators.swift in Sources */,
-				E723B828195142CF1253D29142BFFDEB /* Bond+UIActivityIndicatorView.swift in Sources */,
-				9981976982AAE258243BE7D4B86CDFDF /* Bond+UIBarItem.swift in Sources */,
-				69624C973EA80CC7E574CC3777F4D280 /* Bond+UIButton.swift in Sources */,
-				44A18E2F2AC013E792B8A5F59F5B45AF /* Bond+UICollectionView.swift in Sources */,
-				08EDEA021CC10869A84589E9CF3168B3 /* Bond+UIDatePicker.swift in Sources */,
-				6D785B4822FA1E4E4ACFE2EC9191B7B7 /* Bond+UIImageView.swift in Sources */,
-				8C6D4F8CE21BA725008A554D356DFD32 /* Bond+UILabel.swift in Sources */,
-				55FD414C9DEA8C93450B89EBBBC08985 /* Bond+UINavigationItem.swift in Sources */,
-				6CC7F7CFA488CC4D6B232F88B6BE6DA6 /* Bond+UIProgressView.swift in Sources */,
-				4106F4D95C6C544A29B6272A24C1B885 /* Bond+UISlider.swift in Sources */,
-				2B826B880E06039DC4AE086DE7184998 /* Bond+UISwitch.swift in Sources */,
-				BE93255D08FA4FE2453733F49644FBB4 /* Bond+UITableView.swift in Sources */,
-				F10BFDF5ACBACDE8C2A709AB4E9FC5C1 /* Bond+UITextField.swift in Sources */,
-				2EE06915BF35E2C1099FB842EECE905D /* Bond+UITextView.swift in Sources */,
-				D7DE598CE7711F8EC78437BCC595342B /* Bond+UIView.swift in Sources */,
-				233463A0650FC24F6F87D04FE67D8D27 /* Bond-dummy.m in Sources */,
-				2EF34F59DF7A8D81C4ADA31687380C00 /* Bond.swift in Sources */,
+				B20C23CDC630039926E4CD5716E78AC0 /* Bond+Arrays.swift in Sources */,
+				BD43B1881907120E0FD1FD9B81FDBA65 /* Bond+CALayer.swift in Sources */,
+				825C8541AF00031E4FB9DDFE7E204909 /* Bond+Foundation.swift in Sources */,
+				42E7BE47F94C005C6F7EBE5B5BAC271E /* Bond+Functional.swift in Sources */,
+				E0DA022A71BF7B053E7B8A8B2001A250 /* Bond+NSLayoutConstraint.swift in Sources */,
+				72F4A6E3B40083499F46EA4BD0F66795 /* Bond+Operators.swift in Sources */,
+				12FA233B0D8CCFEEFCD363196136B6FD /* Bond+UIActivityIndicatorView.swift in Sources */,
+				48CC8F73B6E7CC4046C9BD07B5BC5B0B /* Bond+UIBarItem.swift in Sources */,
+				7A73970F3D893854A9CDC86FFE7DA57E /* Bond+UIButton.swift in Sources */,
+				E35C21808B6206B4C09CF3DFDC23DCE4 /* Bond+UICollectionView.swift in Sources */,
+				E724E2D50DDF95EAAD661879775CD0F1 /* Bond+UIDatePicker.swift in Sources */,
+				A4C3C98FBF4C2C73938659DD03A486A6 /* Bond+UIImageView.swift in Sources */,
+				41A95B7E4F468D7385DACE74EED2C01D /* Bond+UILabel.swift in Sources */,
+				E600CBC4B3E948A70D5A236458822A16 /* Bond+UINavigationItem.swift in Sources */,
+				82848D04BAAE8F7F9D6D929FC7A4E6D3 /* Bond+UIProgressView.swift in Sources */,
+				56F94991ECD2F734D044F5E1B5A9D931 /* Bond+UISegmentedControl.swift in Sources */,
+				192B2F4EC010816FC332A30861E325AE /* Bond+UISlider.swift in Sources */,
+				8B6D76EF26267674FE5B83742EF63B21 /* Bond+UISwitch.swift in Sources */,
+				B9A2C63AC0616DD7297B5EEBDCBBEF73 /* Bond+UITableView.swift in Sources */,
+				7C2DEBFA32A650188D9AB9FE8AE0950B /* Bond+UITextField.swift in Sources */,
+				00B88068335290C1C713DF19FFF238BC /* Bond+UITextView.swift in Sources */,
+				E5D920EFEBB8DA5F202C92A8317820FC /* Bond+UIView.swift in Sources */,
+				9F211A1E188B1FE207D0635AC7015795 /* Bond-dummy.m in Sources */,
+				4CD7F64EF49D07D19716D92AB0D684A6 /* Bond.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,11 +366,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		59DD7261AB74908A9E93843E12AEE452 /* PBXTargetDependency */ = {
+		54D0653648445FF59D7CBD44C94BCEA9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Bond;
-			target = 338205BC34A658F7C109143DB290B612 /* Bond */;
-			targetProxy = 3597D41C21DD462C0A3D64EEA53A3D83 /* PBXContainerItemProxy */;
+			target = CE7732F7AE20E6C96BF7771036B05480 /* Bond */;
+			targetProxy = 7F18D237665410214AD1F8B7537FC882 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,33 +409,6 @@
 			};
 			name = Release;
 		};
-		6491076F93DA096DAF87B8D70224BC0F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92AA62AAF6C7C97DF78019B6A5129783 /* Bond-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 3.9.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 3;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Bond/Bond-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Bond/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Bond/Bond.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Bond;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		7E9761A6F50BC5FFF568B72EA117F89B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F234A1026EDC4C38F06C5DDDC3FEAB65 /* Pods-Rambos.release.xcconfig */;
@@ -460,6 +437,61 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		A74222824B43417FE5D85CD31469808B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71B7EE664426D5E582008DAD55EBEDB /* Bond-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 3.10.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 3;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bond/Bond-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bond/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bond/Bond.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Bond;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8FEFC719931399DA0E9374BC13E7FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C71B7EE664426D5E582008DAD55EBEDB /* Bond-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 3.10.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 3;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bond/Bond-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bond/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bond/Bond.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Bond;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -530,34 +562,6 @@
 			};
 			name = Debug;
 		};
-		F6835A950ED5AFBB05DCAD55C21A5998 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92AA62AAF6C7C97DF78019B6A5129783 /* Bond-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 3.9.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 3;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Bond/Bond-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Bond/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Bond/Bond.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Bond;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,11 +583,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A953EA6175E8927916F31CCC28250EC0 /* Build configuration list for PBXNativeTarget "Bond" */ = {
+		7DBCAEF49645EC1FFE67216C2888F867 /* Build configuration list for PBXNativeTarget "Bond" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6835A950ED5AFBB05DCAD55C21A5998 /* Debug */,
-				6491076F93DA096DAF87B8D70224BC0F /* Release */,
+				A8FEFC719931399DA0E9374BC13E7FBA /* Debug */,
+				A74222824B43417FE5D85CD31469808B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
