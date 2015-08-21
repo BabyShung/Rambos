@@ -1,10 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vm1-y0-2gd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tmt-bW-JPA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Number List View Controller-->
+        <scene sceneID="9ca-ZH-jC8">
+            <objects>
+                <viewController storyboardIdentifier="NumberListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E7X-0j-hd5" customClass="NumberListViewController" customModule="Rambos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ju2-67-Haa"/>
+                        <viewControllerLayoutGuide type="bottom" id="gmo-xu-cU2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6VP-U1-12e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cD6-Bi-ugr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWe-3e-Zaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2171" y="-279"/>
+        </scene>
         <!--Random Numbers View Controller-->
         <scene sceneID="4mM-Oc-c5z">
             <objects>
@@ -17,13 +36,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Numbers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aP-Po-98f">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Random Numbers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aP-Po-98f">
                                 <rect key="frame" x="16" y="89" width="568" height="223"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvk-u6-Zpk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Average time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvk-u6-Zpk">
                                 <rect key="frame" x="26" y="555" width="548" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="b8n-XZ-jLu"/>
@@ -32,7 +51,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lD6-BH-8g8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lD6-BH-8g8">
                                 <rect key="frame" x="26" y="520" width="548" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="qWL-5S-emJ"/>
@@ -41,7 +60,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoj-zy-VNx">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoj-zy-VNx">
                                 <rect key="frame" x="66" y="437" width="209" height="58"/>
                                 <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -52,7 +71,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMb-aG-TtM">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMb-aG-TtM">
                                 <rect key="frame" x="325" y="437" width="209" height="58"/>
                                 <color key="backgroundColor" red="0.82352941180000006" green="0.82352941180000006" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Stop">
@@ -60,7 +79,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OXE-k2-3kA">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OXE-k2-3kA">
                                 <rect key="frame" x="200" y="362" width="200" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="LDm-Xf-oXn"/>
@@ -116,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4Q-fn-noB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1377" y="447"/>
+            <point key="canvasLocation" x="2189" y="447"/>
         </scene>
         <!--Enter Result View Controller-->
         <scene sceneID="2WV-dv-m5P">
@@ -247,10 +266,11 @@
             </objects>
             <point key="canvasLocation" x="1377" y="1129"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Strings-->
         <scene sceneID="XS1-7N-dks">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vm1-y0-2gd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Strings" id="Jul-aa-seh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aMm-ia-UOM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -263,7 +283,45 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tz3-F0-HSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1354" y="447"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3YB-UJ-LUJ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tmt-bW-JPA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kUV-dA-wz7">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Vm1-y0-2gd" kind="relationship" relationship="viewControllers" id="S1I-J3-cPi"/>
+                        <segue destination="YmM-nU-IfV" kind="relationship" relationship="viewControllers" id="uL9-BL-tPw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yjf-lY-HAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="542" y="447"/>
+        </scene>
+        <!--Numbers-->
+        <scene sceneID="PaX-PU-mHI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YmM-nU-IfV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Numbers" id="wfq-xh-Cgc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f1f-T2-lGY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="E7X-0j-hd5" kind="relationship" relationship="rootViewController" id="nhZ-qq-wrJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dae-5x-wcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359" y="-279"/>
         </scene>
     </scenes>
 </document>
