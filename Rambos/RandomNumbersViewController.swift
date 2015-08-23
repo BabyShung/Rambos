@@ -18,8 +18,10 @@ class RandomNumbersViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var averageTimeLabel: UILabel!
     
+    //view model
     let viewModel = RandomNumberViewModel()
     
+    //Actions
     lazy var startButtonTapObserver: Bond<UIControlEvents> = Bond<UIControlEvents> {
         [unowned self] event in
         self.viewModel.startTimer()

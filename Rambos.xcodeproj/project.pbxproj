@@ -24,6 +24,13 @@
 		E64BE06C1B6C6B1B00530C2B /* ObserverProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BE06B1B6C6B1B00530C2B /* ObserverProxy.swift */; };
 		E64BE0701B6C80AA00530C2B /* CardFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BE06F1B6C80AA00530C2B /* CardFlowLayout.swift */; };
 		E662220C1B8423A400A47478 /* NumberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662220B1B8423A400A47478 /* NumberListViewController.swift */; };
+		E66222291B86B52400A47478 /* NumberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66222281B86B52400A47478 /* NumberListViewModel.swift */; };
+		E662222B1B86C07200A47478 /* OneHundredNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662222A1B86C07200A47478 /* OneHundredNumbers.swift */; };
+		E66222331B88221800A47478 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66222321B88221800A47478 /* Queue.swift */; };
+		E66222351B89561100A47478 /* NumberDurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66222341B89561100A47478 /* NumberDurationViewController.swift */; };
+		E66222371B8956A700A47478 /* NumberDurationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66222361B8956A700A47478 /* NumberDurationCollectionViewCell.swift */; };
+		E66222391B89614700A47478 /* NumberDurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66222381B89614700A47478 /* NumberDurationViewModel.swift */; };
+		E662223B1B89625B00A47478 /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662223A1B89625B00A47478 /* Array+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		E64BE06B1B6C6B1B00530C2B /* ObserverProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObserverProxy.swift; path = Classes/ObserverProxy.swift; sourceTree = SOURCE_ROOT; };
 		E64BE06F1B6C80AA00530C2B /* CardFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardFlowLayout.swift; path = Classes/CardFlowLayout.swift; sourceTree = SOURCE_ROOT; };
 		E662220B1B8423A400A47478 /* NumberListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberListViewController.swift; path = Classes/NumberListViewController.swift; sourceTree = SOURCE_ROOT; };
+		E66222281B86B52400A47478 /* NumberListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberListViewModel.swift; path = Classes/NumberListViewModel.swift; sourceTree = SOURCE_ROOT; };
+		E662222A1B86C07200A47478 /* OneHundredNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OneHundredNumbers.swift; path = Classes/OneHundredNumbers.swift; sourceTree = SOURCE_ROOT; };
+		E66222321B88221800A47478 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Classes/Queue.swift; sourceTree = SOURCE_ROOT; };
+		E66222341B89561100A47478 /* NumberDurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberDurationViewController.swift; path = Classes/NumberDurationViewController.swift; sourceTree = SOURCE_ROOT; };
+		E66222361B8956A700A47478 /* NumberDurationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberDurationCollectionViewCell.swift; path = Classes/NumberDurationCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		E66222381B89614700A47478 /* NumberDurationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberDurationViewModel.swift; path = Classes/NumberDurationViewModel.swift; sourceTree = SOURCE_ROOT; };
+		E662223A1B89625B00A47478 /* Array+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Additions.swift"; path = "Classes/Array+Additions.swift"; sourceTree = SOURCE_ROOT; };
 		F2DCA3EC56A1667F4D57F98F /* Pods-Rambos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rambos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rambos/Pods-Rambos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,12 +175,16 @@
 		E607CE981B673A240069C163 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E64BE06F1B6C80AA00530C2B /* CardFlowLayout.swift */,
+				E64BE06B1B6C6B1B00530C2B /* ObserverProxy.swift */,
+				E662222A1B86C07200A47478 /* OneHundredNumbers.swift */,
 				E607CE991B673A540069C163 /* RandomNumbers.swift */,
 				E607CE9C1B673A540069C163 /* UIButton+Theme.swift */,
 				E607CE9D1B673A540069C163 /* UISegmentedControl+Values.swift */,
 				E607CE9E1B673A540069C163 /* ZHTimer.swift */,
-				E64BE06B1B6C6B1B00530C2B /* ObserverProxy.swift */,
-				E64BE06F1B6C80AA00530C2B /* CardFlowLayout.swift */,
+				E66222321B88221800A47478 /* Queue.swift */,
+				E66222361B8956A700A47478 /* NumberDurationCollectionViewCell.swift */,
+				E662223A1B89625B00A47478 /* Array+Additions.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -177,6 +195,7 @@
 				E607CE9A1B673A540069C163 /* RandomNumbersViewController.swift */,
 				E61295361B688551009B068D /* EnterResultViewController.swift */,
 				E662220B1B8423A400A47478 /* NumberListViewController.swift */,
+				E66222341B89561100A47478 /* NumberDurationViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +205,8 @@
 			children = (
 				E607CE9B1B673A540069C163 /* RandomNumberViewModel.swift */,
 				E61295401B69BE09009B068D /* EnterResultViewModel.swift */,
+				E66222281B86B52400A47478 /* NumberListViewModel.swift */,
+				E66222381B89614700A47478 /* NumberDurationViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -342,15 +363,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				E607CEA31B673A540069C163 /* UISegmentedControl+Values.swift in Sources */,
+				E66222291B86B52400A47478 /* NumberListViewModel.swift in Sources */,
 				E607CEA11B673A540069C163 /* RandomNumberViewModel.swift in Sources */,
 				E61295411B69BE09009B068D /* EnterResultViewModel.swift in Sources */,
 				E607CEA01B673A540069C163 /* RandomNumbersViewController.swift in Sources */,
 				E607CEA41B673A540069C163 /* ZHTimer.swift in Sources */,
+				E66222371B8956A700A47478 /* NumberDurationCollectionViewCell.swift in Sources */,
 				E607CE791B6739320069C163 /* AppDelegate.swift in Sources */,
+				E662223B1B89625B00A47478 /* Array+Additions.swift in Sources */,
+				E66222351B89561100A47478 /* NumberDurationViewController.swift in Sources */,
 				E64BE06C1B6C6B1B00530C2B /* ObserverProxy.swift in Sources */,
 				E607CE9F1B673A540069C163 /* RandomNumbers.swift in Sources */,
 				E61295371B688551009B068D /* EnterResultViewController.swift in Sources */,
+				E66222331B88221800A47478 /* Queue.swift in Sources */,
+				E662222B1B86C07200A47478 /* OneHundredNumbers.swift in Sources */,
 				E662220C1B8423A400A47478 /* NumberListViewController.swift in Sources */,
+				E66222391B89614700A47478 /* NumberDurationViewModel.swift in Sources */,
 				E64BE0701B6C80AA00530C2B /* CardFlowLayout.swift in Sources */,
 				E607CEA21B673A540069C163 /* UIButton+Theme.swift in Sources */,
 			);
