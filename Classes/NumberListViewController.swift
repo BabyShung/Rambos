@@ -16,48 +16,53 @@ class NumberListViewController: UIViewController, UIPickerViewDataSource, UIPick
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pickerView: UIPickerView!
     
+    @IBOutlet weak var statisticsButton: UIButton!
+    
+    var selectedPickerIndex:Int! = 0
     let viewModel = NumberListViewModel()
     let options = [2, 4, 6, 8, 10]
     
-    //Actions
-    lazy var startAndNextButtonObserver: Bond<UIControlEvents> = Bond<UIControlEvents> {
-        [unowned self] event in
+    @IBAction func didClickNextButton(sender: AnyObject) {
         
-        if self.viewModel.queueIsEmpty() {
-            
-            let vc = self.storyboard?.instantiateViewControllerWithIdentifier("NumberDurationViewController") as! NumberDurationViewController
-            //pass the data
-//            vc.tuple = (self.randomNumberLabel.text!, self.timerLabel.text!)
-            
-            vc.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-            self.presentViewController(vc, animated: true, completion: nil)
-            
-        } else {
-            var row = self.pickerView.selectedRowInComponent(0)
-            var howManyNumbers = self.options[row]
-            self.viewModel.getNumbers(howManyNumbers)
-        }
+        self.pickerView.hidden = true
+        var howManyNumbers = self.options[self.selectedPickerIndex]
+        self.viewModel.getNumbers(howManyNumbers)
     }
     
+    @IBAction func didClickStatistics(sender: AnyObject) {
+        showStatisticsView()
+    }
+    
+    func showStatisticsView() {
+        
+        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("NumberDurationViewController") as! NumberDurationViewController
+        //pass the data
+        vc.results = self.viewModel.resultList
+        
+        self.viewModel.prepareNumbersQueue()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.selectedPickerIndex = self.pickerView.selectedRowInComponent(0)
+        
         nextButton.themeWithColor(UIColor.darkTextColor())
-
+        
+        viewModel.statisticsButtonHidden ->> statisticsButton.dynHidden
         viewModel.timerText ->> timerLabel
         viewModel.buttonText ->> nextButton.dynTitle
         viewModel.characterText ->> charactersLabel
-        
-        nextButton.dynEvent.filter(==, .TouchUpInside) ->| startAndNextButtonObserver
-        
-        
-       
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    /**
+       Picker View delegates
+    */
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -67,7 +72,11 @@ class NumberListViewController: UIViewController, UIPickerViewDataSource, UIPick
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        return "\(options[row])"
+        return "\(options[row]) numbers"
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.selectedPickerIndex = row
     }
     
     func showActionSheetTapped() {

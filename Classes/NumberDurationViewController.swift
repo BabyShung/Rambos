@@ -12,10 +12,14 @@ class NumberDurationViewController: UIViewController, UICollectionViewDataSource
 
     var results : [(number: String, duration: String)]?
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        println(self.results?.count)
+        
+        self.results!.sort { $0.1 > $1.1}
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,13 +30,13 @@ class NumberDurationViewController: UIViewController, UICollectionViewDataSource
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! NumberDurationCollectionViewCell
-        cell.numberLabel.text = "444"
-        cell.durationLabel.text = "01:00:00"
+        cell.numberLabel.text = results![indexPath.row].0
+        cell.durationLabel.text = results![indexPath.row].1
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return results!.count
     }
 
 }

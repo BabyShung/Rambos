@@ -17,6 +17,7 @@ class ZHTimer {
     private var timer:NSTimer
     
     var elapsedTimeString:String
+    
     var isStopped:Bool {
         return !timer.valid
     }

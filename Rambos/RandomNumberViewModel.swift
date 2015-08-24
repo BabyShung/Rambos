@@ -35,13 +35,11 @@ class RandomNumberViewModel {
         startButtonEnabled.value = false
         stopButtonEnabled.value = true
         randomNumberText.value = randomNum.randomNumberForDigits(digitNumbers)
-        
     }
     
     func stopTimer() {
         timer.stop()
         startButtonEnabled.value = true
         stopButtonEnabled.value = false
-        timerText.value = timerText.value
     }
 }

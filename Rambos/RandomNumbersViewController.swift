@@ -37,7 +37,6 @@ class RandomNumbersViewController: UIViewController {
         
         vc.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         self.presentViewController(vc, animated: true, completion: nil)
-        
     }
         
     /**

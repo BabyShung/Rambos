@@ -12,4 +12,10 @@ class NumberDurationCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.contentView.layer.cornerRadius = 5.0
+    }
 }

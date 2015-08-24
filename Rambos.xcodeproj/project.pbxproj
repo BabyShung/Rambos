@@ -135,10 +135,9 @@
 		E607CE751B6739320069C163 /* Rambos */ = {
 			isa = PBXGroup;
 			children = (
-				E607CEA61B673AA70069C163 /* ViewModels */,
-				E607CEA51B673A930069C163 /* Controllers */,
-				E607CE981B673A240069C163 /* Models */,
 				E607CE7C1B6739320069C163 /* Main.storyboard */,
+				E607CEA61B673AA70069C163 /* Classes */,
+				E607CE981B673A240069C163 /* Models */,
 				E607CE761B6739320069C163 /* Supporting Files */,
 			);
 			path = Rambos;
@@ -183,32 +182,121 @@
 				E607CE9D1B673A540069C163 /* UISegmentedControl+Values.swift */,
 				E607CE9E1B673A540069C163 /* ZHTimer.swift */,
 				E66222321B88221800A47478 /* Queue.swift */,
-				E66222361B8956A700A47478 /* NumberDurationCollectionViewCell.swift */,
 				E662223A1B89625B00A47478 /* Array+Additions.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
 		};
-		E607CEA51B673A930069C163 /* Controllers */ = {
+		E607CEA61B673AA70069C163 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E662223F1B8A12B000A47478 /* EnterResult */,
+				E66222451B8A12E900A47478 /* NumberDuration */,
+				E66222421B8A12CD00A47478 /* NumberList */,
+				E662223C1B8A126B00A47478 /* RandomNumber */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E662223C1B8A126B00A47478 /* RandomNumber */ = {
+			isa = PBXGroup;
+			children = (
+				E662223E1B8A129B00A47478 /* VM */,
+				E662223D1B8A129000A47478 /* VC */,
+			);
+			name = RandomNumber;
+			sourceTree = "<group>";
+		};
+		E662223D1B8A129000A47478 /* VC */ = {
 			isa = PBXGroup;
 			children = (
 				E607CE9A1B673A540069C163 /* RandomNumbersViewController.swift */,
-				E61295361B688551009B068D /* EnterResultViewController.swift */,
-				E662220B1B8423A400A47478 /* NumberListViewController.swift */,
-				E66222341B89561100A47478 /* NumberDurationViewController.swift */,
 			);
-			name = Controllers;
+			name = VC;
 			sourceTree = "<group>";
 		};
-		E607CEA61B673AA70069C163 /* ViewModels */ = {
+		E662223E1B8A129B00A47478 /* VM */ = {
 			isa = PBXGroup;
 			children = (
 				E607CE9B1B673A540069C163 /* RandomNumberViewModel.swift */,
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
+		E662223F1B8A12B000A47478 /* EnterResult */ = {
+			isa = PBXGroup;
+			children = (
+				E66222411B8A12BC00A47478 /* VC */,
+				E66222401B8A12B700A47478 /* VM */,
+			);
+			name = EnterResult;
+			sourceTree = "<group>";
+		};
+		E66222401B8A12B700A47478 /* VM */ = {
+			isa = PBXGroup;
+			children = (
 				E61295401B69BE09009B068D /* EnterResultViewModel.swift */,
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
+		E66222411B8A12BC00A47478 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E61295361B688551009B068D /* EnterResultViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		E66222421B8A12CD00A47478 /* NumberList */ = {
+			isa = PBXGroup;
+			children = (
+				E66222441B8A12DB00A47478 /* VC */,
+				E66222431B8A12D500A47478 /* VM */,
+			);
+			name = NumberList;
+			sourceTree = "<group>";
+		};
+		E66222431B8A12D500A47478 /* VM */ = {
+			isa = PBXGroup;
+			children = (
 				E66222281B86B52400A47478 /* NumberListViewModel.swift */,
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
+		E66222441B8A12DB00A47478 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E662220B1B8423A400A47478 /* NumberListViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		E66222451B8A12E900A47478 /* NumberDuration */ = {
+			isa = PBXGroup;
+			children = (
+				E66222361B8956A700A47478 /* NumberDurationCollectionViewCell.swift */,
+				E66222471B8A12F500A47478 /* VC */,
+				E66222461B8A12F000A47478 /* VM */,
+			);
+			name = NumberDuration;
+			sourceTree = "<group>";
+		};
+		E66222461B8A12F000A47478 /* VM */ = {
+			isa = PBXGroup;
+			children = (
 				E66222381B89614700A47478 /* NumberDurationViewModel.swift */,
 			);
-			name = ViewModels;
+			name = VM;
+			sourceTree = "<group>";
+		};
+		E66222471B8A12F500A47478 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				E66222341B89561100A47478 /* NumberDurationViewController.swift */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
