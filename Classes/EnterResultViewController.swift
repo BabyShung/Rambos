@@ -11,7 +11,7 @@ import Bond
 
 class EnterResultViewController: UIViewController {
 
-    @IBOutlet weak var resultTextField: UITextField!
+    @IBOutlet weak var resultTextView: UITextView!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var bottomViewBottomPadding: NSLayoutConstraint!
     @IBOutlet weak var dismissBtn: UIButton!
@@ -25,7 +25,7 @@ class EnterResultViewController: UIViewController {
     lazy var confirmButtonTapObserver: Bond<UIControlEvents> = Bond<UIControlEvents> {
         [unowned self] event in
         if let two = self.tuple {
-            self.viewModel.confirm((two.correctString, self.resultTextField.text))
+            self.viewModel.confirm((two.correctString, self.resultTextView.text))
         }
     }
     
@@ -37,12 +37,12 @@ class EnterResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        resultTextField.keyboardType = UIKeyboardType.NumberPad
+        resultTextView.keyboardType = UIKeyboardType.NumberPad
         dismissBtn.themeWithColor(UIColor.darkGrayColor())
         confirmBtn.themeWithColor(UIColor.orangeColor())
         
         viewModel.resultLabelText ->> resultLabel
-        viewModel.enterResultTextFieldText <->> resultTextField
+        viewModel.enterResultTextFieldText <->> resultTextView
         
         confirmBtn.dynEvent.filter(==, .TouchUpInside) ->| confirmButtonTapObserver
         dismissBtn.dynEvent.filter(==, .TouchUpInside) ->| dismissButtonTapObserver
@@ -81,7 +81,7 @@ class EnterResultViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        resultTextField.becomeFirstResponder()
+        resultTextView.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {

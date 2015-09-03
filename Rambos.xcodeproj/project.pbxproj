@@ -31,6 +31,7 @@
 		E66222371B8956A700A47478 /* NumberDurationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66222361B8956A700A47478 /* NumberDurationCollectionViewCell.swift */; };
 		E66222391B89614700A47478 /* NumberDurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66222381B89614700A47478 /* NumberDurationViewModel.swift */; };
 		E662223B1B89625B00A47478 /* Array+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E662223A1B89625B00A47478 /* Array+Additions.swift */; };
+		E69B3F181B91620E00BB8E39 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69B3F171B91620E00BB8E39 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		E66222361B8956A700A47478 /* NumberDurationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberDurationCollectionViewCell.swift; path = Classes/NumberDurationCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		E66222381B89614700A47478 /* NumberDurationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberDurationViewModel.swift; path = Classes/NumberDurationViewModel.swift; sourceTree = SOURCE_ROOT; };
 		E662223A1B89625B00A47478 /* Array+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Additions.swift"; path = "Classes/Array+Additions.swift"; sourceTree = SOURCE_ROOT; };
+		E69B3F171B91620E00BB8E39 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Classes/Result.swift; sourceTree = SOURCE_ROOT; };
 		F2DCA3EC56A1667F4D57F98F /* Pods-Rambos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rambos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rambos/Pods-Rambos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 				E607CE9E1B673A540069C163 /* ZHTimer.swift */,
 				E66222321B88221800A47478 /* Queue.swift */,
 				E662223A1B89625B00A47478 /* Array+Additions.swift */,
+				E69B3F171B91620E00BB8E39 /* Result.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				E61295411B69BE09009B068D /* EnterResultViewModel.swift in Sources */,
 				E607CEA01B673A540069C163 /* RandomNumbersViewController.swift in Sources */,
 				E607CEA41B673A540069C163 /* ZHTimer.swift in Sources */,
+				E69B3F181B91620E00BB8E39 /* Result.swift in Sources */,
 				E66222371B8956A700A47478 /* NumberDurationCollectionViewCell.swift in Sources */,
 				E607CE791B6739320069C163 /* AppDelegate.swift in Sources */,
 				E662223B1B89625B00A47478 /* Array+Additions.swift in Sources */,
@@ -598,6 +602,7 @@
 			baseConfigurationReference = F2DCA3EC56A1667F4D57F98F /* Pods-Rambos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Rambos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -609,6 +614,7 @@
 			baseConfigurationReference = 69707B673A9247D4138EE714 /* Pods-Rambos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Rambos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

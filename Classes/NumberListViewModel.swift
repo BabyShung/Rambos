@@ -19,7 +19,7 @@ class NumberListViewModel {
 
     var timer = ZHTimer()
     private var numberQueue = Queue<String>()
-    var resultList : [(number:String,duration:String)] = []
+    var resultList : [(number:String,durationText:String,duration:Double)] = []
     
     init(){
         
@@ -46,8 +46,6 @@ class NumberListViewModel {
         for number in numbers {
             self.numberQueue.enqueue(number)
         }
-        
-        self.resultList = []
     }
     
     func reset() {
@@ -56,13 +54,16 @@ class NumberListViewModel {
         self.characterText.value = ""
         self.buttonText.value = "Start Again"
         statisticsButtonHidden.value = false
+        prepareNumbersQueue()
     }
     
     func getNumbers(howManyNumbers : Int) {
         
         if self.numberQueue.isEmpty() {
-            
-            self.resultList += [(self.characterText.value, self.timerText.value)]
+            //Done
+            self.resultList += [(self.characterText.value,
+                                     self.timerText.value,
+                                            self.timer.elapsedTime)]
             
             reset()
             return
@@ -80,11 +81,14 @@ class NumberListViewModel {
         }
         
         if timer.isStopped {    //first time
+            self.resultList = []
             self.buttonText.value = "Next"
             statisticsButtonHidden.value = true
         } else {
             timer.stop()
-            self.resultList += [(numberText, self.timerText.value)]
+            self.resultList += [(self.characterText.value,
+                self.timerText.value,
+                self.timer.elapsedTime)]
         }
         
         self.characterText.value = numberText

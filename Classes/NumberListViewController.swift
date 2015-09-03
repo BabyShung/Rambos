@@ -18,14 +18,14 @@ class NumberListViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     @IBOutlet weak var statisticsButton: UIButton!
     
-    var selectedPickerIndex:Int! = 0
     let viewModel = NumberListViewModel()
     let options = [2, 4, 6, 8, 10]
     
     @IBAction func didClickNextButton(sender: AnyObject) {
         
-        self.pickerView.hidden = true
-        var howManyNumbers = self.options[self.selectedPickerIndex]
+        self.pickerView.hidden = self.viewModel.queueIsEmpty() ? false : true
+        
+        var howManyNumbers = self.options[self.pickerView.selectedRowInComponent(0)]
         self.viewModel.getNumbers(howManyNumbers)
     }
     
@@ -38,17 +38,14 @@ class NumberListViewController: UIViewController, UIPickerViewDataSource, UIPick
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("NumberDurationViewController") as! NumberDurationViewController
         //pass the data
         vc.results = self.viewModel.resultList
-        
-        self.viewModel.prepareNumbersQueue()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.selectedPickerIndex = self.pickerView.selectedRowInComponent(0)
-        
         nextButton.themeWithColor(UIColor.darkTextColor())
+        statisticsButton.themeWithColor(UIColor.darkGrayColor())
         
         viewModel.statisticsButtonHidden ->> statisticsButton.dynHidden
         viewModel.timerText ->> timerLabel
@@ -73,10 +70,6 @@ class NumberListViewController: UIViewController, UIPickerViewDataSource, UIPick
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return "\(options[row]) numbers"
-    }
-    
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        self.selectedPickerIndex = row
     }
     
     func showActionSheetTapped() {

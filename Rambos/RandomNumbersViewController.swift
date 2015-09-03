@@ -9,34 +9,40 @@
 import UIKit
 import Bond
 
-class RandomNumbersViewController: UIViewController {
+class RandomNumbersViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
-    @IBOutlet weak var digitsSegmentedControl: UISegmentedControl!
     @IBOutlet weak var randomNumberLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var averageTimeLabel: UILabel!
+    @IBOutlet weak var pickerView: UIPickerView!
     
     //view model
     let viewModel = RandomNumberViewModel()
     
+    let options = [26, 52, 80, 150, 200]
+    
     //Actions
     lazy var startButtonTapObserver: Bond<UIControlEvents> = Bond<UIControlEvents> {
         [unowned self] event in
+        self.viewModel.digitNumbers = self.options[self.pickerView.selectedRowInComponent(0)]
         self.viewModel.startTimer()
+        self.pickerView.hidden = true
     }
     
     lazy var stopButtonTapObserver: Bond<UIControlEvents> = Bond<UIControlEvents> {
         [unowned self] event in
         self.viewModel.stopTimer()
+        self.pickerView.hidden = false
         
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("EnterResultViewController") as! EnterResultViewController
         //pass the data
         vc.tuple = (self.randomNumberLabel.text!, self.timerLabel.text!)
         
         vc.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
-        self.presentViewController(vc, animated: true, completion: nil)
+        self.presentViewController(vc, animated: true) { () -> Void in
+            self.randomNumberLabel.text = ""
+        }
     }
         
     /**
@@ -50,7 +56,7 @@ class RandomNumbersViewController: UIViewController {
         
         viewModel.randomNumberText ->> randomNumberLabel
         viewModel.timerText ->> timerLabel
-        viewModel.averageTimeText ->> averageTimeLabel
+        viewModel.randomNumberLabelHidden ->> randomNumberLabel.dynHidden
         
         viewModel.startButtonEnabled ->> startButton
         viewModel.stopButtonEnabled ->> stopButton
@@ -58,11 +64,22 @@ class RandomNumbersViewController: UIViewController {
         startButton.dynEvent.filter(==, .TouchUpInside) ->| startButtonTapObserver
         stopButton.dynEvent.filter(==, .TouchUpInside) ->| stopButtonTapObserver
     }
-
-    @IBAction func segmentedValueChanged(sender: UISegmentedControl) {
-            self.viewModel.digitNumbers = sender.getSelectedValue()
+    
+    /**
+    Picker View delegates
+    */
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
     }
     
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return options.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        return "\(options[row]) digits"
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

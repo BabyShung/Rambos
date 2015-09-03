@@ -12,9 +12,9 @@ import Foundation
 class RandomNumberViewModel {
     
     let timerText = Dynamic<String>("00:00:00")
-    let averageTimeText = Dynamic<String>("")
     let randomNumberText = Dynamic<String>("Get Ready..")
     let randomNum = RandomNumbers()
+    let randomNumberLabelHidden = Dynamic<Bool>(true)
     
     var digitNumbers:Int = 26
     var startButtonEnabled: Dynamic<Bool>
@@ -34,6 +34,7 @@ class RandomNumberViewModel {
         timer.start()
         startButtonEnabled.value = false
         stopButtonEnabled.value = true
+        randomNumberLabelHidden.value = false
         randomNumberText.value = randomNum.randomNumberForDigits(digitNumbers)
     }
     

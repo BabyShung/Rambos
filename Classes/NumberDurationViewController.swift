@@ -10,7 +10,7 @@ import UIKit
 
 class NumberDurationViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    var results : [(number: String, duration: String)]?
+    var results : [(number: String, durationText: String, duration: Double)]?
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -18,8 +18,15 @@ class NumberDurationViewController: UIViewController, UICollectionViewDataSource
         super.viewDidLoad()
         
         println(self.results?.count)
-        
+        println(self.results)
         self.results!.sort { $0.1 > $1.1}
+        
+        //sum all durations
+        var count = 0.0
+        for row in self.results! {
+            count += row.2
+        }
+        self.title = String(format: "%.2f seconds", count)
     }
 
     override func didReceiveMemoryWarning() {
