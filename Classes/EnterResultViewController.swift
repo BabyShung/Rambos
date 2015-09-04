@@ -41,7 +41,7 @@ class EnterResultViewController: UIViewController {
         dismissBtn.themeWithColor(UIColor.darkGrayColor())
         confirmBtn.themeWithColor(UIColor.orangeColor())
         
-        viewModel.resultLabelText ->> resultLabel
+        viewModel.resultLabelText ->> resultLabel.dynAttributedText
         viewModel.enterResultTextFieldText <->> resultTextView
         
         confirmBtn.dynEvent.filter(==, .TouchUpInside) ->| confirmButtonTapObserver

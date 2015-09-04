@@ -51,6 +51,8 @@ class RandomNumbersViewController: UIViewController, UIPickerViewDataSource, UIP
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Good"
+        
         startButton.themeWithColor(UIColor.orangeColor())
         stopButton.themeWithColor(UIColor.blueColor())
         
