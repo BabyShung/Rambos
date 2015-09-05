@@ -15,15 +15,14 @@ class ZHTimer {
     
     private var startTime = NSTimeInterval()
     private var timer:NSTimer
+    var elapsedTime = NSTimeInterval()
     
-    var elapsedTimeString:String
     var isStopped:Bool {
         return !timer.valid
     }
     
     init() {
         timer = NSTimer()
-        elapsedTimeString = "00:00:00"
     }
     
     convenience init(_ listener: Listener) {
@@ -47,11 +46,17 @@ class ZHTimer {
     This is called from NSTimer, should include @objc since this class is not NSObject
     */
     @objc func updateTime() {
+        if let myListener = self.listener {
+            myListener(formartElapsedTimeString(self.startTime))
+        }
+    }
+    
+    func formartElapsedTimeString(startTime:Double) -> String {
         var currentTime = NSDate.timeIntervalSinceReferenceDate()
         
         //Find the difference between current time and start time.
         var elapsedTime: NSTimeInterval = currentTime - startTime
-        
+        self.elapsedTime = elapsedTime
         //calculate the minutes in elapsed time.
         let minutes = UInt8(elapsedTime / 60.0)
         elapsedTime -= (NSTimeInterval(minutes) * 60)
@@ -69,8 +74,15 @@ class ZHTimer {
         let strSeconds = String(format: "%02d", seconds)
         let strFraction = String(format: "%02d", fraction)
         
-        //concatenate minuets, seconds and milliseconds as assign it to the UILabel
-        elapsedTimeString = "\(strMinutes):\(strSeconds):\(strFraction)"
-        listener?(elapsedTimeString)
+        return "\(strMinutes):\(strSeconds):\(strFraction)"
+    }
+    
+    func roundToPlaces() -> Double {
+        return self.roundToPlaces(self.elapsedTime, places: 2)
+    }
+    
+    func roundToPlaces(value:Double, places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return round(value * divisor) / divisor
     }
 }
